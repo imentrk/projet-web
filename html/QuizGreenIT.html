@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Version 5 de HTML-->
+<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
+
+    <head> <!-- Entête du document HTML -->
+        <title>Green IT – Quiz</title> <!-- Indique au navigateur quel titre vous donnez à votre page -->
+        <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
+        <link rel= "stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head><!-- Fin de la balise d'entête -->
+
+    <body><!-- Début du code de la page web -->
+        <header>
+            <a href="https://www.greenit.fr/">
+                <img src = "../img/green_IT_tree.avif" alt = "GreenIT_img">
+            </a>
+            <nav>
+                <a href="./Accueil.html" class="nava">Accueil</a>
+                <a href="./GreenITSiteWeb.html" class="nava">Green IT & sites Web</a>
+                <a href="./QuizGreenIT.html" class="nava">Quiz Green IT</a>
+                <a href="./apropos.html" class="nava">A propos</a>
+            </nav>
+        </header>
+
+        <form id="quiz">
+            <fieldset>
+                <legend>Vos informations</legend>
+                <div>
+                    <label class="infos-persos" for="n">Nom :</label>
+                    <input type="text" id="n" name="nom">
+                </div>
+                <div>
+                    <label class="infos-persos" for="p">Prénom :</label>
+                    <input type="text" id="p" name="prenom">
+                </div>
+                <div>
+                    <label class="infos-persos" for="date">Date de naissance :</label>
+                    <input type="date" id="date" name="ddn">
+                </div>
+                <div>
+                    <label class="infos-persos" for="m">Adresse mail :</label>
+                    <input type="email" id="m" name="mail">
+                </div>
+                <div>
+                    <label class="infos-persos" for="statut-select">Statut :</label>
+                    <select name="statut" id="statut-select">
+                        <option value="">Choisissez un statut</option>
+                        <option value="Célibataire">Célibataire</option>
+                        <option value="Marié(e)">Marié(e)</option>
+                        <option value="Divorcé(e)">Divorcé(e)</option>
+                        <option value="Veuf(ve)">Veuf(ve)</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <fieldset id="questionnaire">
+                <legend>Quiz sur la Green IT</legend>
+                <div>
+                    <ol>
+                        <li>
+                            <p>Qu'est-ce que la Green IT ?</p>
+                            
+                                
+                            <input type="radio" id="opta" name="choix">
+                            <label for="opta">a) Une pratique visant à réduire l'impact environnemental des technologies de l'information.</label><br>
+                    
+                            <input type="radio" id="optb" name="choix">
+                            <label for="optb">b) Un système de recyclage des anciens ordinateurs.</label><br>
+                                
+                            <input type="radio" id="optc" name="choix">
+                            <label for="optc">c) Une méthode pour augmenter la consommation énergétique des serveurs.</label><br>
+                               
+                        </li>
+                        <li>
+                            <p>Quel est l'objectif principal de la Green IT ?</p>
+
+                            <input type="checkbox" id="opt4" name="choix1">
+                            <label for="opt4">a) Réduire la consommation d'énergie.</label><br>
+
+                            <input type="checkbox" id="opt5" name="choix2">
+                            <label for="opt5">b) Minimiser les déchets électroniques.</label><br>
+
+                            <input type="checkbox" id="opt6" name="choix3">
+                            <label for="opt6">c) Optimiser les performances des appareils électroniques.</label><br>
+
+                        </li>
+                        <li>
+                            <p>Donnez un exemple de pratique Green IT :</p>
+                            <input id="description" type="text">
+                        </li>
+                    </ol>
+                </div>
+            </fieldset>
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <footer>
+            <p>©️2024 Maha Naceur.</p>
+            <p>Tous droits réservés.</p>
+            <a href="https://www.greenit.fr/">En savoir plus ?</a>
+        </footer>
+    </body><!-- Fin du code de la page web -->
+
+</html><!-- Fin du document -->
