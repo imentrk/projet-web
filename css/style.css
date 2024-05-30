@@ -1,0 +1,177 @@
+
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#img_head {
+    height: 60px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d91901;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #ff0000;
+}
+
+h1 {
+    border-bottom: 2px solid #d91901;
+    padding-bottom: 10px;
+}
+.accueil section{
+    background-color: #ffffff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #d91901;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tableau-accueil img {
+    width: 100px; 
+    height: auto; 
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; 
+}
+
+section[nom="femmes"]{
+    padding: 20px;
+}
+
+.femmesdanslaf1 h1, .femmesdanslaf1 h2, .femmesdanslaf1 h3, .femmesdanslaf1 h4 {
+    color: #8060a8;
+}
+
+.femmesdanslaf1 a {
+    color: #618abe;
+    text-decoration: none;
+}
+
+.femmesdanslaf1 a:hover {
+    text-decoration: underline;
+}
+
+.femmesdanslaf1 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.femmesdanslaf1 ul li {
+    margin-bottom: 10px;
+}
+.quiz h1, .quiz fieldset legend {
+    color: #ff0000;
+}
+
+.quiz form {
+    padding: 20px;
+}
+
+.quiz fieldset {
+    border: 2px solid #ff0000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.quiz fieldset legend {
+    font-weight: bold;
+}
+
+.quiz p {
+    font-weight: bold;
+}
+
+.quiz label {
+    margin-left: 10px;
+}
+
+.quiz input[type="radio"] {
+    margin-right: 10px;
+}
+
+.quiz button[type="submit"] {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.quiz button[type="submit"]:hover {
+    background-color: #d91901;
+}
+
+footer {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d91901;
+}
+
+
+
+
