@@ -1,5 +1,5 @@
 
-
+/*
 body {
     background-color: #ffffff;
     color: #000000;
@@ -172,20 +172,19 @@ footer a:hover {
     color: #d91901;
 }
 
-/*test*/
+*/
 
 
 body {
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
 header {
-    background-color: #ff0000; /* F1 red */
+    background-color: #ff0000;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -201,84 +200,180 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #d91901;
 }
-
-
-main {
-    padding: 40px 20px;
+.accueil section{
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 1000px;
-    background-image: url('../img/background.jpg'); /* Add a background image */
-    background-size: cover;
-    background-position: center;
-    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #d91901;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tableau-accueil img {
+    width: 100px; 
+    height: auto; 
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; 
 }
 
 
-.femmesdanslaf1 section {
-    padding: 40px;
+main {
+    padding: 20px;
+    background-color: #8060a8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+section {
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-
-.femmesdanslaf1 h1, .femmesdanslaf1 h2, .femmesdanslaf1 h3, .femmesdanslaf1 h4 {
+h1, h2, h3, h4 {
     color: #8060a8; 
-    margin-bottom: 20px;
     text-align: center;
 }
 
-.femmesdanslaf1 h1 {
+h1 {
     border-bottom: 2px solid #8060a8;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
 
-
-.femmesdanslaf1 p {
+p {
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-
-.femmesdanslaf1 a {
-    color: #618abe; /* Theme color for F1 Academy links */
+a {
+    color: #618abe; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.femmesdanslaf1 a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-
-.femmesdanslaf1 ul {
+ul {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
-.femmesdanslaf1 ul li {
+ul li {
     margin-bottom: 10px;
 }
 
-
-.femmesdanslaf1 img {
+img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin: 20px 0;
 }
 
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-gallery img {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+}
+
+@media (max-width: 768px) {
+    .image-gallery img {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-gallery img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.quiz h1, .quiz fieldset legend {
+    color: #ff0000;
+}
+
+.quiz form {
+    padding: 20px;
+}
+
+.quiz fieldset {
+    border: 2px solid #ff0000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.quiz fieldset legend {
+    font-weight: bold;
+}
+
+.quiz p {
+    font-weight: bold;
+}
+
+.quiz label {
+    margin-left: 10px;
+}
+
+.quiz input[type="radio"] {
+    margin-right: 10px;
+}
+
+.quiz button[type="submit"] {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.quiz button[type="submit"]:hover {
+    background-color: #d91901;
+}
 
 footer {
     background-color: #ff0000;
@@ -300,6 +395,7 @@ footer a {
 footer a:hover {
     color: #d91901;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -311,4 +407,14 @@ footer a:hover {
     text-align: center;
 }
 
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
 
