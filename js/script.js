@@ -34,3 +34,28 @@ function submitQuiz(){
 
     alert("Votre score est " + score + " sur " + nbqsts);
 }
+
+function display1() {
+    var bubble = document.querySelector('.bubble1');
+    if (bubble.style.display === 'none') {
+        bubble.style.display = 'block';
+    } else {
+        bubble.style.display = 'none';
+    }
+}
+function display2(){
+    var bubble = document.querySelector('.bubble2');
+    if (bubble.style.display === 'none') {
+        bubble.style.display = 'block';
+    } else {
+        bubble.style.display = 'none';
+    }
+}
+function display3(){
+    var bubble = document.querySelector('.bubble3');
+    if (bubble.style.display === 'none') {
+        bubble.style.display = 'block';
+    } else {
+        bubble.style.display = 'none';
+    }
+}
