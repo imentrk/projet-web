@@ -174,7 +174,7 @@ footer a:hover {
 
 /*test*/
 
-/* General body styles */
+
 body {
     background-color: #f0f0f0;
     color: #333;
@@ -183,7 +183,7 @@ body {
     padding: 0;
 }
 
-/* Header styles */
+
 header {
     background-color: #ff0000; /* F1 red */
     padding: 20px;
@@ -208,7 +208,7 @@ nav a:hover {
     color: #d91901;
 }
 
-/* Main content styles */
+
 main {
     padding: 40px 20px;
     background-color: #ffffff;
@@ -222,7 +222,7 @@ main {
     color: #333;
 }
 
-/* Section specific styles for "Femmes dans la F1" */
+
 .femmesdanslaf1 section {
     padding: 40px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -230,9 +230,9 @@ main {
     margin-bottom: 20px;
 }
 
-/* Headings */
+
 .femmesdanslaf1 h1, .femmesdanslaf1 h2, .femmesdanslaf1 h3, .femmesdanslaf1 h4 {
-    color: #8060a8; /* Theme color for F1 Academy */
+    color: #8060a8; 
     margin-bottom: 20px;
     text-align: center;
 }
@@ -243,13 +243,13 @@ main {
     margin-bottom: 30px;
 }
 
-/* Paragraphs */
+
 .femmesdanslaf1 p {
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-/* Links */
+
 .femmesdanslaf1 a {
     color: #618abe; /* Theme color for F1 Academy links */
     text-decoration: none;
@@ -260,7 +260,7 @@ main {
     text-decoration: underline;
 }
 
-/* Lists */
+
 .femmesdanslaf1 ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -271,7 +271,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* Image styles */
+
 .femmesdanslaf1 img {
     max-width: 100%;
     height: auto;
@@ -279,7 +279,7 @@ main {
     margin: 20px 0;
 }
 
-/* Footer styles */
+
 footer {
     background-color: #ff0000;
     color: #ffffff;
@@ -301,7 +301,7 @@ footer a:hover {
     color: #d91901;
 }
 
-/* Utility classes */
+
 .container {
     width: 90%;
     max-width: 1200px;
