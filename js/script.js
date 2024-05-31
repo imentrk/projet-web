@@ -1,7 +1,7 @@
 function submitQuiz(){
     var score=0;
     const nbqsts=10;
-
+    var qstSansRep=0;
     const correction = {
         q1: "c",
         q2: "a",
@@ -18,9 +18,17 @@ function submitQuiz(){
     for(let i=1; i<= nbqsts; i++){
         let qst = "q"+i;
         let selection = document.querySelector('input[name="' + qst + '"]:checked');
-
-        if(selection && selection.value === correction[qst]){
+        if(!selection){
+            qstSansRep++;
+        }
+        else if(selection && selection.value === correction[qst]){
             score++;
+        }
+    }
+    if(qstSansRep >0){
+        var confirmation = confirm("Vous n'avez pas répondu à "+qstSansRep+" question(s).\nÊtes vous sûr de vouloir soumettre vos réponses ?");
+        if(!confirmation){
+            return;
         }
     }
 
