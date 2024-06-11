@@ -208,15 +208,6 @@ nav a:hover {
 .accueil section{
     background-color: #ffffff;
 }
-.accueil a{
-    color : black;
-}
-
-.accueil a:hover{
-    text-decoration: underline;
-    color: #d91901;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -293,15 +284,14 @@ p {
     margin-bottom: 20px;
 }
 
-.femmesdanslaf1 a {
+a {
     color: #618abe; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.femmesdanslaf1 a:hover {
+a:hover {
     text-decoration: underline;
-    color : #8060a8
 }
 
 ul {
@@ -445,6 +435,7 @@ footer a:hover {
     height: 100%;
     object-fit: cover; 
 }
+
 .voiture{
     display: flex;
     justify-content: center;
