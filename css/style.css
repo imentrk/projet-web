@@ -435,6 +435,11 @@ footer a:hover {
     height: 100%;
     object-fit: cover; 
 }
+.voiture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*     __________________________________________       */
