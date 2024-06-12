@@ -382,7 +382,7 @@
             //on ajoute un gestionnaire d'événements qui surveille si l'utilisateur clique sur le bouton et active la fonction spécifiée
             button.addEventListener('click', function() { 
                 const target = this.getAttribute('data-target');//on récupère la valeur de l'attribut de l'élément qui a été cliqué dans la constante target
-                //on sélectionne et parcourt tous les éléments qui sontt de la classe contenus
+                //on sélectionne et parcourt tous les éléments qui sont de la classe contenus
                 document.querySelectorAll('.contenus').forEach(content => {
                     //on vérifie que le contenu récupéré correspond au target 
                     if (content.id === target) {
