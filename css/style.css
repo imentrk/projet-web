@@ -161,7 +161,7 @@ tbody tr:nth-child(even) {
 }
 
 
-main {
+.lesfemmesdanslaf1 {
     padding: 20px;
     background-color: #8060a8;
     border-radius: 8px;
@@ -267,7 +267,7 @@ body > section.accueil1 {
 
 /*FEMMES DANS LA F1*/
 
-section[nom="femmes"]{
+section[class="femmes"]{
     padding: 20px;
 }
 
