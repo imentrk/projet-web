@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="../js/script.js"></script>
+    <!--on inclut le fichier css principal de la bibliothèque Slick Carousel version 1.8.1-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <!--on inclut le fichier css du thème par défaut de Slick Carousel version 1.8.1-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
 </head>
@@ -347,19 +349,26 @@
             </table>
         </section>
     </div>
+
+    <!--Ceci est le script du slider (caroussel en français)-->
+    <!--on inclut la bibliothèque jQuery version 3.6.0-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--on inclut le script de la bibliothèque Slick Carousel version 1.8.1-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript">
+
         $(document).ready(function(){
+            //une fois que le document est prêt, on initialise le caroussel Slick
             $('.slider').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                dots: true
+                infinite: true, //on configure le carrousel pour qu'il soit infini (les slides reviennent au début après la dernière)
+                slidesToShow: 1, //on définit le nombre de slides affichées à la fois à 1
+                slidesToScroll: 1, //on définit le nombre de slides défilées à la fois à 1
+                arrows: true, //on affiche les flèches pour passer d'une slide à une autre 
+                dots: true //on affiche les points de navigation en bas du carrousel
             });
         });
     </script>
+
     <footer>
         <p>©️2024 Mezzi Nour & Triki Imen</p>
         <p>Tous droits réservés.</p>
