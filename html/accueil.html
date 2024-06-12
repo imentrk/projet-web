@@ -12,8 +12,9 @@
 </head>
 
 <body class="accueil">
+    
     <header>
-        <img src="../img/logoF1BlancRouge.jpg" alt="logoF1BlancRouge" id="img_head">
+        <img src="../img/logof1voitures.png" alt="logoF1Couleurs" id="img_head">
         <nav>
             <a class ="header" href="../html/accueil.html">Accueil</a>
             <a class ="header" href="../html/FemmesDansLaF1.html">Femmes dans la F1</a>
@@ -21,11 +22,17 @@
 
         </nav>
     </header>
+    <section class="accueil1">
     <section>
         <h1>Informations générales sur la F1</h1>
     </section>
-    <button onclick="display1()">L'histoire de la F1</button>
-    <div class="bubble1">
+
+    <div class="container">
+        <button class="toggle" data-target="contenu1" >L'histoire de la F1</button>
+        <button class="toggle" data-target="contenu2">Que signifie la FIA ?</button>
+        <button class="toggle" data-target="contenu3" >Les écuries</button>
+    </div>
+    <div id="contenu1" class="contenus">
         <section>
 
             La Formule 1 (F1) est la catégorie reine du sport automobile, connue pour ses voitures de course à roues
@@ -93,10 +100,9 @@
             emblématiques qui marquent chaque saison.
         </section>
     </div>
-    <button onclick="display2()">Que signifie la FIA ?</button>
-    <div class="bubble2">
+    <div id="contenu2" class="contenus">
         <section>
-
+        
             La
             <a href="https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_de_l'automobile">Fédération
                 Internationale de l'Automobile</a>
@@ -180,9 +186,9 @@
             véhicules.
         </section>
     </div>
-    <button onclick="display3()">Les écuries</button>
-    <div class="bubble3">
+    <div id="contenu3" class="contenus">
         <section>
+
             <table class="tableau-accueil">
                 <caption></caption>
                 <thead>
@@ -359,7 +365,21 @@
                 dots: true
             });
         });
+
+        document.querySelectorAll('.toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const target = this.getAttribute('data-target');
+                document.querySelectorAll('.contenus').forEach(content => {
+                    if (content.id === target) {
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+            });
+        });
     </script>
+    </section>
     <footer>
         <p>©️2024 Mezzi Nour & Triki Imen</p>
         <p>Tous droits réservés.</p>

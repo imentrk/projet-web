@@ -1,5 +1,4 @@
 
-/*
 body {
     background-color: #ffffff;
     color: #000000;
@@ -8,8 +7,9 @@ body {
     padding: 0;
 }
 
+/*HEADER*/
 header {
-    background-color: #ff0000;
+    background-color: #000000;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ header {
 }
 
 #img_head {
-    height: 60px;
+    height: 150px;
 }
 
 nav a {
@@ -31,267 +31,51 @@ nav a:hover {
     color: #d91901;
 }
 
-section {
-    padding: 20px;
-}
-
-h1, h2, h3, h4 {
-    color: #ff0000;
-}
-
-h1 {
-    border-bottom: 2px solid #d91901;
-    padding-bottom: 10px;
-}
-.accueil section{
-    background-color: #ffffff;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid #d91901;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #ff0000;
-    color: #ffffff;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-.tableau-accueil img {
-    width: 100px; 
-    height: auto; 
-    max-width: 100%; 
-    display: block;
-    margin: 0 auto; 
-}
-
-section[nom="femmes"]{
-    padding: 20px;
-}
-
-.femmesdanslaf1 h1, .femmesdanslaf1 h2, .femmesdanslaf1 h3, .femmesdanslaf1 h4 {
-    color: #8060a8;
-}
-
-.femmesdanslaf1 a {
-    color: #618abe;
-    text-decoration: none;
-}
-
-.femmesdanslaf1 a:hover {
-    text-decoration: underline;
-}
-
-.femmesdanslaf1 ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.femmesdanslaf1 ul li {
-    margin-bottom: 10px;
-}
-.quiz h1, .quiz fieldset legend {
-    color: #ff0000;
-}
-
-.quiz form {
-    padding: 20px;
-}
-
-.quiz fieldset {
-    border: 2px solid #ff0000;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.quiz fieldset legend {
-    font-weight: bold;
-}
-
-.quiz p {
-    font-weight: bold;
-}
-
-.quiz label {
-    margin-left: 10px;
-}
-
-.quiz input[type="radio"] {
-    margin-right: 10px;
-}
-
-.quiz button[type="submit"] {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.quiz button[type="submit"]:hover {
-    background-color: #d91901;
-}
-
+/*FOOTER*/
 footer {
-    background-color: #ff0000;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 footer a {
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: #d91901;
 }
 
-*/
 
-
-body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #ff0000;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#img_head {
-    height: 60px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #d91901;
-}
+/*ACCUEIL*/
 .accueil section{
     background-color: #ffffff;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
 
-table, th, td {
-    border: 1px solid #d91901;
-}
 
-th, td {
-    padding: 10px;
+.accueil h1{
     text-align: center;
+    font-size: 40px;
 }
-
-th {
-    background-color: #ff0000;
-    color: #ffffff;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-.tableau-accueil img {
-    width: 100px; 
-    height: auto; 
-    max-width: 100%; 
-    display: block;
-    margin: 0 auto; 
-}
-
-
-main {
-    padding: 20px;
-    background-color: #8060a8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-section {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-h1, h2, h3, h4 {
-    color: #ff0000;
-}
-
-section[nom="femmes"]{
-    padding: 20px;
-}
-
-.femmesdanslaf1 h1, .femmesdanslaf1 h2, .femmesdanslaf1 h3, .femmesdanslaf1 h4 {
-    color: #8060a8;
-}
-
-.femmesdanslaf1 h1 {
-    border-bottom: 2px solid #8060a8;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-a {
-    color: #618abe; 
+.accueil1 a:link {
+    color: #e30f0f; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a:hover {
+.accueil1 a:hover {
     text-decoration: underline;
+}
+
+.accueil1 a:visited{
+    color: #ce5757;
 }
 
 ul {
@@ -337,8 +121,201 @@ img {
     }
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #d91901;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tableau-accueil img {
+    width: 100px; 
+    height: auto; 
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
+main {
+    padding: 20px;
+    background-color: #8060a8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+section {
+    padding: 20px;
+    background-color: #ffffffe6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #ff0000;
+    font-family: Chau Philomene;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slider {
+    width: 300px; 
+    height: 200px; 
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.voiture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-left: 17%;
+    
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.toggle {
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle:hover {
+    background-color: #d91901;
+}
+
+.contenus {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+body > section.accueil1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*FEMMES DANS LA F1*/
+
+section[nom="femmes"]{
+    padding: 20px;
+}
+
+.femmesdanslaf1 h1, .femmesdanslaf1 h2, .femmesdanslaf1 h3, .femmesdanslaf1 h4 {
+    color: #8060a8;
+    font-family: Chau Philomene;
+}
+.femmesdanslaf1 h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.femmesdanslaf1 h1 {
+    border-bottom: 2px solid #8060a8;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.lesfemmesdanslaf1 a:link{
+    color:#8060a8;
+}
+
+.lesfemmesdanslaf1 a:visited{
+    color: #618abe;
+}
+
+.lesfemmesdanslaf1 a:hover {
+    text-decoration: underline;
+}
+
+#susieWolff {
+    height: auto;
+    width: 70%;
+    border: solid 10px #8060a8;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/*QUIZ*/
+
 .quiz h1, .quiz fieldset legend {
     color: #ff0000;
+    font-family: Chau Philomene;
 }
 
 .quiz form {
@@ -382,120 +359,79 @@ img {
     background-color: #d91901;
 }
 
-footer {
-    background-color: #ff0000;
+/*A PROPOS*/
+
+section.a-propos p, section.a-propos table, section.a-propos th, section.a-propos td {
+    color: black;
+}
+section.a-propos caption {
+    color: #000000;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+section.a-propos table {
+    border: 1px solid #618abe;
+}
+
+section.a-propos th {
+    background-color: #000000;
     color: #ffffff;
-    text-align: center;
+}
+
+#nour {
+    background-color: #8060a8;
+}
+#imen {
+    background-color: #618abe;
+}
+
+.nourtache1 {
+    background-color: #bc94ee;
+}
+.nourtache2 {
+    background-color: #946fc1;
+}
+
+.imentache1 {
+    background-color: #7797c1;
+}
+.imentache2 {
+    background-color: #5e7ca3;
+}
+
+section.a-propos1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
 }
 
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.bulle {
+    background-color: #f0f0f0; 
+    border: 2px solid #8060a8; 
+    border-radius: 15px; 
+    padding: 20px; 
+    max-width: 60%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
-footer a:hover {
+#ImenEtNour {
+    height: auto;
+    width: 20%;
+    border: solid 10px #8060a8;
+}
+
+#phrasedefin{
+    font-weight: bolder;
     color: #d91901;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.responsive-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-
-.center-img {
-    display: block;
-    margin: 0 auto;
-}
-
-.slider {
-    width: 300px; 
-    height: 200px; 
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.voiture{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*     __________________________________________       */
-.bubbles {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 20px 0;
-}
-
-.bubble1 {
-    flex: 1;
-    background-color: #ffffff;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-    display: none;
-}
-.bubble2 {
-    flex: 1;
-    background-color: #ffffff;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-    display: none;
-}
-.bubble3 {
-    flex: 1;
-    background-color: #ffffff;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-    display: none;
-}
-.bubble:hover {
-    transform: scale(1.05);
-}
-
-.bubble h3 {
-    text-align: center;
-    color: #ff0000;
-    margin-bottom: 20px;
-}
 
 
 
-.bubble h2 {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-}
+
 
