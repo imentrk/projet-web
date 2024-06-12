@@ -364,7 +364,7 @@
     <!--on inclut le script de la bibliothèque Slick Carousel version 1.8.1-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript">
-
+        //script pour le Slick Carousel
         $(document).ready(function(){
             //une fois que le document est prêt, on initialise le carousel Slick
             $('.slider').slick({
@@ -376,13 +376,19 @@
             });
         });
 
-        document.querySelectorAll('.toggle').forEach(button => {
-            button.addEventListener('click', function() {
-                const target = this.getAttribute('data-target');
+
+        //script pour les 3 boutons
+        document.querySelectorAll('.toggle').forEach(button => { //on sélectionne et parcourt tous les éléments qui sont de la classe toggle 
+            //on ajoute un gestionnaire d'événements qui surveille si l'utilisateur clique sur le bouton et active la fonction spécifiée
+            button.addEventListener('click', function() { 
+                const target = this.getAttribute('data-target');//on récupère la valeur de l'attribut de l'élément qui a été cliqué dans la constante target
+                //on sélectionne et parcourt tous les éléments qui sontt de la classe contenus
                 document.querySelectorAll('.contenus').forEach(content => {
+                    //on vérifie que le contenu récupéré correspond au target 
                     if (content.id === target) {
+                        //si le contenu est actuellement affiché on le masque (display : none) sinon on l'affiche (display:block)
                         content.style.display = content.style.display === 'block' ? 'none' : 'block';
-                    } else {
+                    } else {//si le contenu récupéré ne correspond pas au target, on masque le contenu (display : none)
                         content.style.display = 'none';
                     }
                 });
